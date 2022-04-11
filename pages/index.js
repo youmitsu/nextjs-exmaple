@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { IonButton } from '@ionic/react'
+import { IonButton, IonDatetime } from '@ionic/react'
 
 export default function Home() {
   return (
@@ -51,6 +51,10 @@ export default function Home() {
             </p>
           </a>
           <IonButton fill="clear">Start</IonButton>
+          <IonDatetime
+            displayFormat="MM/DD/YYYY"
+            placeholder="Select Date"
+          ></IonDatetime>
         </div>
       </main>
 
